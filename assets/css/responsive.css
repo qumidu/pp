@@ -1,0 +1,85 @@
+/* =================== responsive for  =================== */
+@media (max-width: 1199.98px) {
+  .home-section .home-intro h1 {
+    font-size: 6rem;
+  }
+}
+
+/* =================== responsive for tablet =================== */
+@media (max-width: 991.98px) {
+  .main-header .navbar-collapse {
+    border-bottom: 2px solid var(--dark-color);
+    border-top: 2px solid var(--dark-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+  }
+
+  .main-header .navbar-nav > li + li {
+    border-top: 1px solid rgba(55, 55, 55, 0.1);
+  }
+
+  .main-header .navbar-nav > li > .nav-link {
+    line-height: 50px;
+  }
+
+  .main-header .navbar-nav > li > .nav-link::after {
+    display: none;
+  }
+
+  .main-header .navbar-toggler {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 4px 9px;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .main-header .navbar-toggler span {
+    width: 25px;
+    height: 2px;
+    background: var(--dark-color);
+    margin: 4px 0;
+    transition: 0.3s;
+  }
+
+  .main-header .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .main-header .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .main-header .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}
+
+/* =================== responsive for phone =================== */
+@media (max-width: 767.98px) {
+  .home-section {
+    padding-bottom: 70px;
+  }
+
+  .home-section .home-intro h6 {
+    margin: 0 0 20px;
+  }
+
+  .home-section .home-intro h1 {
+    margin: 0 0 25px;
+    font-size: 4.5rem;
+  }
+
+  .home-section .home-intro p {
+    font-size: 1.8rem;
+  }
+
+  .home-image img {
+    height: 300px;
+    width: 300px;
+  }
+}
