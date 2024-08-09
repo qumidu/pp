@@ -7,6 +7,10 @@
   .home-section .home-intro h1 {
     font-size: 6rem;
   }
+
+  .edit-img {
+    transform: scale(1) rotateY(180deg);
+  }
 }
 
 /* =================== responsive for tablet =================== */
