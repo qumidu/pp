@@ -10,10 +10,33 @@ $(window).on(`scroll`, function () {
 
 // ==================== document ready ====================
 $(document).ready(function () {
-  // Typing animation
+  // typing animation
   new Typed("#type-it", {
     strings: ["Designer", "Developer", "Freelancer"],
     typeSpeed: 100,
     loop: true,
+  });
+
+  // owl carousel
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    items: 2,
+    margin: 30,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      900: {
+        items: 2,
+      },
+    },
+  });
+
+  // one page scroll
+  $.scrollIt({
+    easing: "linear",
+    topOffset: -70,
   });
 });

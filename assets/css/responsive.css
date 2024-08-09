@@ -1,5 +1,9 @@
 /* =================== responsive for  =================== */
 @media (max-width: 1199.98px) {
+  .home-section {
+    padding-top: 30%;
+  }
+
   .home-section .home-intro h1 {
     font-size: 6rem;
   }
@@ -57,12 +61,28 @@
   .main-header .navbar-toggler:not(.collapsed) span:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
   }
+
+  .home-section {
+    padding-top: 20%;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .section-heading {
+    padding-bottom: 40px;
+  }
+
+  .section-heading h3 {
+    font-size: 4.5rem;
+  }
 }
 
 /* =================== responsive for phone =================== */
 @media (max-width: 767.98px) {
   .home-section {
-    padding-bottom: 70px;
+    padding-top: 25%;
   }
 
   .home-section .home-intro h6 {
@@ -81,5 +101,34 @@
   .home-image img {
     height: 300px;
     width: 300px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-heading {
+    padding-bottom: 30px;
+  }
+
+  .section-heading h3 {
+    font-size: 3.8rem;
+  }
+
+  .feature-box {
+    padding: 30px;
+  }
+
+  .feature-box h5 {
+    font-size: 2.2rem;
+  }
+
+  .portfolio-box .portfolio-text h4 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+  }
+
+  .contact-form {
+    padding: 25px;
   }
 }
