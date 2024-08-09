@@ -40,3 +40,21 @@ $(document).ready(function () {
     topOffset: -70,
   });
 });
+
+// nav hide
+const navLinks = document.querySelectorAll(`.nav-link`);
+const navCollapse = document.querySelector(`.navbar-collapse.collapse`);
+const navToggler = document.querySelector(`.navbar-toggler`);
+const main = document.querySelector(`main`);
+const navBrand = document.querySelector(`.navbar-brand`);
+
+function handleNavToggle() {
+  navCollapse.classList.remove("show");
+  navToggler.classList.add("collapsed");
+}
+
+navLinks.forEach(function (navLink) {
+  navLink.addEventListener(`click`, handleNavToggle);
+});
+main.addEventListener(`click`, handleNavToggle);
+navBrand.addEventListener(`click`, handleNavToggle);
